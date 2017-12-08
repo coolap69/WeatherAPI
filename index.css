@@ -1,3 +1,25 @@
-/*font-family: 'Permanent Marker', cursive;*/
-/*twitter color: background-color: #00aced;*/
+.block {
+    background-color: black;
+    opacity: .75;
+    color: white;
+    padding: 50px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    font-size: 1.5em;
+    padding-bottom: 15%
+}
 
+.spacer {
+    padding: 5%;
+}
+
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
