@@ -14,7 +14,7 @@ $(function(){
             return Math.round(F) + '&deg; F';
         }
         
-        $.getJSON("https://freegeoip.net/json/").done(function(location) {
+        $.getJSON('https://freegeoip.net/json/').done(function(location) {
             // console.log(location);
             
             
@@ -24,11 +24,15 @@ $(function(){
         $('#latitude').html(location.latitude);
         $('#longitude').html(location.longitude);
 
+
+        var lat= location.latitude
+        var lon= location.longitude
         
-        $.getJSON('https://api.openweathermap.org/data/2.5/weather? lat=' +location.latitude + '&lon=' +location.longitude + '&units=imperial&appid=APIKEY',
+        $.getJSON('https:api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=imperial'+APIKEY,
         function(data){
             apiData=data;
-            console.log(apiData);
+            // console.log(apiData);
+            console.log(APIKEY);
         })
         
         })
