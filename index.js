@@ -4,9 +4,10 @@ $(function(){
     var C = false;
     var apiData;
     
-    backgroundImage = [
+    backgroundImage = [ 
         'https://i.giphy.com/media/paMdZlRXlc96o/giphy.webp',
         'https://78.media.tumblr.com/98ee23de0b77f7a91d0802dc2ffd3ff6/tumblr_n62bti3Cg81swm1iso1_1280.gif',
+        
         ]
         
         function display (F,C){
@@ -15,7 +16,7 @@ $(function(){
         }
         
         $.getJSON('https://freegeoip.net/json/').done(function(location) {
-            // console.log(location);
+            console.log(location);
             
             
         $('#country').html(location.country_name);
@@ -28,11 +29,11 @@ $(function(){
         var lat= location.latitude
         var lon= location.longitude
         
-        $.getJSON('https:api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=imperial'+APIKEY,
+        $.getJSON('https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=imperial'+APIKEY,
         function(data){
             apiData=data;
-            // console.log(apiData);
-            console.log(APIKEY);
+            console.log(apiData);
+            // console.log(APIKEY);
         })
         
         })
