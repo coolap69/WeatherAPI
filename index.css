@@ -3,7 +3,7 @@
     opacity: .75;
     color: white;
     padding: 50px;
-    width: 50%;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 30px;
@@ -21,5 +21,4 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
