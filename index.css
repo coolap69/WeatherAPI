@@ -1,3 +1,13 @@
+h1 {
+    color: red;
+    font-size: 1em;
+}
+    
+h2 {
+    color: green;
+    font-size: 2.5em;
+}
+
 .block {
     background-color: black;
     opacity: .75;
