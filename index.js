@@ -22,9 +22,30 @@ $(function(){
             var icon = data.weather[0].icon;
             
             
+            
             $('#currentTemp').html(currentTemp);
             $('#currentWeather').html(currentWeather);
-            // $('#icon').html(currentWeather);
+      
+        // var showImage = document.getElementById("#container"); 
+    
+      if (currentWeather === "clouds"){
+       $('#container').css('background-image', 'url(https://apod.nasa.gov/apod/image/1704/NightGlows_TG_2500.jpg');
+      }
+      else if (currentWeather === "light rain", "rain"){
+       $('#container').css('background-image', 'url(https://c1.staticflickr.com/9/8520/8490462966_cbea31aa70_b.jpg');
+      }
+       else if (currentWeather === "snow"){
+       $('#container').css('background-image', 'url(https://handluggageonly.co.uk/wp-content/uploads/2014/12/New-York-City-Covered-in-Snow-00.jpg');
+      }
+       else if (currentWeather === "clear"){
+       $('#container').css('background-image', 'url(https://apod.nasa.gov/apod/image/1704/NightGlows_TG_2500.jpg');
+      }
+       else if (currentWeather === "mist"){
+       $('#container').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/thesunchronicle.com/content/tncms/assets/v3/editorial/e/6d/e6d8850b-9e78-546f-a1ec-6fb8e97ac292/59efefaae9ba1.image.jpg?resize=1200%2');
+      }
+       else if (currentWeather === "thunder"){
+       $('#container').css('background-image', 'url(https://valuebound.com/sites/default/files/2017-05/thunder-city.jpg');
+      }
 
             
             var apiIcon ='https://openweathermap.org/img/w/' + icon + '.png ';
@@ -58,7 +79,7 @@ $(function(){
             
             $('#toggle').click(function(){
                 C= !C;
-                render(data,C);
+                // render(data,C);
             });
         });
         

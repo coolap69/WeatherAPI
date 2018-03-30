@@ -1,3 +1,11 @@
+#container {
+  background: url("https://uproxx.files.wordpress.com/2015/07/sharknado.jpg?quality=95&w=650&h=401") 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
 h1 {
     color: red;
     font-size: 1em;
